@@ -1,0 +1,9 @@
+._content {
+  display: inline-flex;
+  width: 100%;
+  padding: 40px var(--Content-gap-small, 0px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.94);
+}

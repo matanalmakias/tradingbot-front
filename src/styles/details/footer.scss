@@ -1,0 +1,30 @@
+._footer {
+  display: flex;
+  text-align: center;
+
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  background: #fff;
+  > .copy-right {
+    flex: 1 0 0;
+    color: #0d0d0d;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px; /* 150% */
+    letter-spacing: 2.28px;
+  }
+  > .privacy-n-policy {
+    flex: 1 0 0;
+    color: #0d0d0d;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px; /* 138.462% */
+    letter-spacing: 2.47px;
+  }
+}

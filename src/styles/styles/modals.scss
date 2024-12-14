@@ -1,0 +1,24 @@
+.modal1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.custom-modal .modal-header button.close {
+  color: red; /* Change to your preferred color */
+  font-size: 24px; /* Adjust font size if needed */
+  font-weight: bold; /* Adjust font weight if needed */
+}
+
+.custom-modal .modal-header button.close:hover {
+  color: darkred; /* Change to your preferred hover color */
+  text-decoration: none; /* Remove underline on hover */
+}

@@ -1,0 +1,11 @@
+.logo {
+  height: 140px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}

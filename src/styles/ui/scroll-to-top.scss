@@ -1,0 +1,14 @@
+.scroll-to-top {
+  background-color: #c300ff;
+  color: #fff;
+  border: none;
+  border-radius: 80%;
+  position: fixed;
+  cursor: pointer;
+  transition: background-color 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  background-color: #ff008c;
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}

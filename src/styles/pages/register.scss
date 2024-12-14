@@ -1,0 +1,147 @@
+.register {
+  border: 2px solid #fff;
+  min-height: 90vh;
+  background: url("/backgrounds/register.jpg") center / cover no-repeat;
+  background-attachment: fixed; /* Add this line to fix the background */
+  box-shadow: 9px 4px 40.4px var(--Screen-content-padding, 20px)
+      rgba(0, 0, 0, 0.25) inset,
+    -22px 80px 35px 0px rgba(0, 0, 0, 0.05) inset;
+  > .main-container {
+    display: flex;
+    padding: 53px 53px 53px 53px;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    background-color: #fff;
+    box-shadow: 9px 15px 4px 0px rgba(0, 0, 0, 0.04);
+    > ._body {
+      display: flex;
+      padding: 15px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+      > .title {
+        display: flex;
+        height: 48px;
+        padding: var(--Content-gap-small, 0px);
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        align-self: stretch;
+        background: var(--blue3, #7674e8);
+        > .text {
+          display: flex;
+          width: 154px;
+          height: 48px;
+          flex-direction: column;
+          justify-content: center;
+          color: #fff;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 29px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 2px; /* 6.897% */
+          letter-spacing: 3.48px;
+        }
+      }
+      > .field-container {
+        display: flex;
+        padding: var(--Content-gap-small, 0px);
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        > .field {
+          display: flex;
+          padding: var(--Content-gap-small, 0px);
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: -2px;
+          > .label {
+            display: flex;
+            padding: var(--Content-gap-small, 0px);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            background: rgba(0, 0, 0, 0.02);
+            .text {
+              width: 252px;
+              height: 53px;
+              color: #000;
+              text-align: center;
+              font-family: "Open Sans";
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 57px; /* 335.294% */
+              letter-spacing: 0.34px;
+            }
+          }
+          > .input {
+            display: flex;
+            width: 180px;
+            height: 33px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            border-radius: 26px;
+            border: 2px solid var(--blue2, #2c2b85);
+            > .text {
+              flex: 1 0 0;
+              color: #000;
+              text-align: center;
+              font-family: "Open Sans";
+              font-size: 19px;
+              font-style: italic;
+              font-weight: 300;
+              line-height: 45px; /* 236.842% */
+              letter-spacing: 0.38px;
+            }
+          }
+        }
+      }
+      > .submit-btn {
+        display: flex;
+        padding: var(--Content-gap-small, 0px);
+        justify-content: center;
+        align-items: center;
+        gap: -16px;
+        border-radius: 42px;
+        background: var(--blue2, #2c2b85);
+        cursor: pointer;
+        transition: all 0.3s linear;
+        &:hover {
+          background: var(--blue2-hover, #f01866);
+          box-shadow: 7px 8px 0px 0px rgba(0, 0, 0, 0.062);
+
+          color: #1b1b1b;
+          transform: scale(1.00000000000001);
+        }
+        &:active {
+          transform: scale(0.99);
+        }
+        > .icon {
+          width: 59px;
+          height: 59px;
+          background: url("assets/checkmark-yellow.png");
+        }
+        > .text {
+          width: 172px;
+          color: #fff;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 2px; /* 8% */
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}

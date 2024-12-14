@@ -1,0 +1,53 @@
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6,
+.btn7,
+.btn8 {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+    background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #3f4b66;
+  color: #f7f7f7;
+}
+
+/* Hover effect */
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.btn5:hover,
+.btn6:hover,
+.btn7:hover,
+.btn8:hover {
+  background-color: #3a344df6;
+  color: #d7ddfd;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  transition: background-color 0.3s ease;
+}
+
+/* Active effect */
+.btn1:active,
+.btn2:active,
+.btn3:active,
+.btn4:active,
+.btn5:active,
+.btn6:active,
+.btn7:active,
+.btn8:active {
+  box-shadow: none;
+  background-color: #3e4f66;
+  transform: translateY(0);
+}

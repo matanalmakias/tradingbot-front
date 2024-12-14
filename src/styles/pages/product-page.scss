@@ -1,0 +1,295 @@
+.product-page {
+  border: 2px solid #fff;
+  background: url("/backgrounds/product-page.jpg") center / cover no-repeat;
+  background-attachment: fixed; /* Add this line to fix the background */
+  box-shadow: 9px 4px 40.4px var(--Screen-content-padding, 20px)
+      rgba(0, 0, 0, 0.25) inset,
+    -22px 80px 35px 0px rgba(0, 0, 0, 0.05) inset;
+}
+.product-page-container {
+  display: inline-flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 44px;
+  background: #000;
+  box-shadow: 14px 19px 11.7px 0px rgba(0, 0, 0, 0.13);
+  > .product {
+    display: flex;
+    width: 922px;
+    height: 477px;
+    padding: 5px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff !important;
+    > .image {
+      flex: 1 0 0;
+      height: 100%;
+      align-self: stretch;
+      background: url("/assets/product-image.png");
+      background-size: cover; /* Fit the image within the background area */
+      background-position: center;
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+    }
+
+    > .details {
+      display: flex;
+      padding: var(--Content-gap-small, 0px);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 50%;
+      flex: 1 0 0;
+      align-self: stretch;
+      > .name {
+        display: flex;
+        padding: 6px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        background: var(--blue3, #7674e8);
+        > .text {
+          height: 26px;
+          flex: 1 0 0;
+          color: #fff;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 27px; /* 96.429% */
+        }
+      }
+      > .desc {
+        display: flex;
+        padding: 11px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        background: var(--blue3, #7674e8);
+        > .text {
+          color: #fff;
+          text-align: right;
+          font-family: "Open Sans";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 18px; /* 112.5% */
+          letter-spacing: 1.44px;
+        }
+      }
+      > .price {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        background: #fff;
+        > .text {
+          width: 61px;
+          color: var(--blue3, #7674e8);
+          font-family: "Open Sans";
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 80% */
+          letter-spacing: -1px;
+        }
+      }
+      > .ingredients {
+        display: flex;
+        height: 80px;
+        padding: var(--Content-gap-small, 0px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        > .title {
+          display: flex;
+          padding-top: 1px;
+          justify-content: center;
+          align-items: center;
+          gap: -79px;
+          .text {
+            width: 242px;
+            height: 30px;
+            color: var(--red, #f01866);
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 200% */
+            letter-spacing: 0.4px;
+          }
+          .text2 {
+            width: 242px;
+            height: 30px;
+            color: var(--blue3, #7674e8);
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 105.263% */
+            letter-spacing: -0.76px;
+          }
+        }
+        > .details {
+          display: flex;
+          padding: var(--Content-gap-small, 0px);
+          justify-content: center;
+          align-items: flex-start;
+          gap: 3px;
+          align-self: stretch;
+          > .unchecked {
+            display: flex;
+            padding: var(--Content-gap-small, 0px);
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: var(--Content-gap-small, 0px);
+            > .text {
+              width: 67px;
+              color: #000;
+              text-align: center;
+              font-family: "Open Sans";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 20px; /* 142.857% */
+              letter-spacing: 0.7px;
+            }
+            > .icon {
+              width: 19px;
+              height: 19px;
+              background: url("/assets/circle.png");
+            }
+          }
+          > .checked {
+            display: flex;
+            padding: var(--Content-gap-small, 0px);
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: var(--Content-gap-small, 0px);
+            > .text {
+              width: 67px;
+              color: #000;
+              text-align: center;
+              font-family: "Open Sans";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 20px; /* 142.857% */
+              letter-spacing: 0.7px;
+            }
+            > .icon {
+              width: 17px;
+              height: 17px;
+              background: url("/assets/circle-checked.png"),
+                lightgray 50% / contain no-repeat;
+            }
+          }
+        }
+      }
+      > .sizes-container {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        > .sizes {
+          display: flex;
+          padding: 7px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: #fafafa;
+          > .size {
+            display: flex;
+            padding: 4px;
+            justify-content: center;
+            align-items: center;
+            gap: var(--Content-gap-small, 0px);
+            border-radius: 7px;
+            background: #fff;
+            .text {
+              color: #000;
+              text-align: center;
+              font-family: "Open Sans";
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 20px; /* 181.818% */
+              letter-spacing: 0.55px;
+            }
+          }
+        }
+        > .title {
+          display: flex;
+          padding: 7px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: #1b1b1b;
+          > .text {
+            color: #fff;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 0.7px;
+          }
+        }
+      }
+
+      > .add-to-cart {
+        display: flex;
+        width: 416px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        > .frame {
+          padding: 11px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          gap: var(--Content-gap-small, 0px);
+          flex: 1 0 0;
+          background: var(--blue3, #7674e8);
+          > .text {
+            margin-bottom: 5px;
+            color: #fff;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 80% */
+            letter-spacing: -1px;
+          }
+          > .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 2px;
+            width: 42px;
+            height: 41px;
+            background: url("/assets/checkmark.png");
+          }
+        }
+      }
+    }
+  }
+}

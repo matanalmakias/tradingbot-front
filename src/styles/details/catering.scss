@@ -1,0 +1,41 @@
+.catering {
+  display: flex;
+  padding: 11px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: var(--yellow, #fbff33);
+  box-shadow: 7px 8px 0px 0px rgba(0, 0, 0, 0.14);
+  transition: all 0.12s ease-in-out;
+
+  > .text {
+    color: var(--blue, #1a195b);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 62.5% */
+    letter-spacing: 4.48px;
+  }
+
+  > .whatsapp {
+    width: 47px;
+    height: 47px;
+    background: url("/assets/whatsapp.png");
+  }
+
+  &:hover {
+    background: var(--blue2-hover, #fffb00);
+    box-shadow: 7px 8px 0px 0px rgba(0, 0, 0, 0.13);
+
+    transform: scale(1.00000000000001);
+  }
+  &:active {
+    transform: scale(0.9975);
+  }
+  &:not(:hover) {
+  }
+}

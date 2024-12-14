@@ -1,0 +1,67 @@
+._sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #070707;
+  z-index: 1000; /* Optional, ensures header is above other content */
+  padding: 15px;
+
+  .item1 {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 28px;
+    background: rgba(26, 25, 91, 0.12);
+
+    > .profile-icon {
+      width: 68px;
+      height: 68px;
+      background: url("/assets/profile-icon.png");
+      cursor: pointer;
+      &:hover {
+        box-shadow: 7px 8px 0px 0px rgba(0, 0, 0, 0.062);
+
+        transform: scale(1.03);
+      }
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+    > .cart-icon {
+      width: 58px;
+      height: 58px;
+      background: url("/assets/cart-icon.png");
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 7px 8px 0px 0px rgba(0, 0, 0, 0.062);
+
+        transform: scale(1.03);
+      }
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+  }
+  .panel-admin-btn {
+    display: flex;
+    padding: 28px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Content-gap-small, 0px);
+    border-radius: 43px;
+    background: #000;
+    > .text {
+      color: #fff;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px; /* 69.231% */
+      letter-spacing: 1.04px;
+    }
+  }
+}
